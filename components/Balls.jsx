@@ -51,7 +51,7 @@ export default function Balls() {
     const ballY = useTransform(y, [-windowHeight / 1, windowHeight / 1], [windowHeight / 20, -windowHeight / 20]);
 
     return (
-        <div className="relative top-0 left-0 w-screen h-screen overflow-hidden">
+        <>
             {balls.map((ball) => (
                 <motion.div
                     key={ball.id}
@@ -64,11 +64,12 @@ export default function Balls() {
                         right: `${ball.right}px`,
                         top: `${ball.top}px`,
                         x: ballX,
-                        y: ballY
+                        y: ballY,
+                        zIndex: -100,
                     }}
                     transition={{ type: 'spring', stiffness: 100, damping: 15 }}
                 />
             ))}
-        </div>
+        </>
     );
 }

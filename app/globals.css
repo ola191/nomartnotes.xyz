@@ -12,3 +12,93 @@
 .family-poppins {
   font-family: "Poppins", sans-serif;
 }
+
+mark {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgb(230, 230, 230),
+    rgba(230, 230, 230, 0.7) 4%,
+    rgba(230, 230, 230, 0.7) 54%,
+    rgba(194, 180, 147, 0.1) 58%,
+    rgba(230, 230, 230, 0.7) 62%,
+    rgba(230, 230, 230, 0.3)
+  );
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #efefef;
+  max-width: 100vw;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  z-index: -500;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../public/bg/bgg.png");
+  background-color: rgba(239, 239, 239, 0.97);
+  background-blend-mode: lighten;
+  background-size: cover;
+}
+
+.paper {
+  position: relative;
+  border-radius: 2px;
+}
+
+nav {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.paper::before,
+.paper::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0,0,0,.7);
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+.paper::before {
+  left: 15px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+
+.paper::after {
+  right: 15px;
+  transform: skew(5deg) rotate(5deg);
+}
+
+.paper:hover::before,
+.paper:hover::after {
+  box-shadow: 0 2px 14px rgba(0,0,0,.4);
+}
+
+.paper:hover::before {
+  left: 5px;
+}
+
+.paper:hover::after {
+  right: 5px;
+}
+
+
+@keyframes closePage {
+  0% {
+    
+  }
+}

@@ -6,6 +6,7 @@ import Balls from "@/components/Balls";
 import Hero from "@/components/Hero";
 import Categories from "@/components/Categories";
 import Offer from "@/components/Offer";
+import Footer from "@/components/Footer";
 
 export default function Home() {
     return (
@@ -22,6 +23,7 @@ export default function Home() {
                 <Hero />
                 <Categories />
                 <Offer />
+                <Footer />
             </div>
             </>
     );

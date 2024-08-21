@@ -16,7 +16,7 @@ export default function Nav() {
       if (changed == false) {
         setIsOpen(true);
       }
-    }, 1000);
+    }, 0);
 
     return () => clearTimeout(timer);
   });
@@ -29,10 +29,10 @@ export default function Nav() {
         </div>
       </Link>
       <ul className="flex w-full justify-end text-gray-800">
-        <li className={`px-4 text-lg -z-20 transition-all duration-[600ms] ease-in-out ${isOpen ? 'translate-x-0 z-20' : 'translate-x-96'}`}><span className={`opacity-0 transition-all ease-in-out ${isOpen ? 'opacity-100 delay-[50ms] duration-[150ms]' : 'text-red-[#EEEAE4] duration-[600ms]'}`}><Link href="About">About</Link></span></li>
-        <li className={`px-4 text-lg -z-20 transition-all duration-[600ms] ease-in-out ${isOpen ? 'translate-x-0 z-20' : 'translate-x-96'}`}><span className={`opacity-0 transition-all ease-in-out ${isOpen ? 'opacity-100 delay-[125ms] duration-[300ms]' : 'text-red-[#EEEAE4] duration-[450ms]'}`}><Link href="Projects">Projects</Link></span></li>
-        <li className={`px-4 text-lg -z-20 transition-all duration-[600ms] ease-in-out ${isOpen ? 'translate-x-0 z-20' : 'translate-x-96'}`}><span className={`opacity-0 transition-all ease-in-out ${isOpen ? 'opacity-100 delay-[200ms] duration-[450ms]' : 'text-red-[#EEEAE4] duration-[300ms]'}`}><Link href="Contact">Contact</Link></span></li>
-        <li className={`px-4 text-lg -z-20 transition-all duration-[600ms] ease-in-out ${isOpen ? 'translate-x-0 z-20' : 'translate-x-96'}`}><span className={`opacity-0 transition-all ease-in-out ${isOpen ? 'opacity-100 delay-[275ms] duration-[600ms]' : 'text-red-[#EEEAE4] duration-[150ms]'}`}><Link href="Search">Search</Link></span></li>
+        <li className={`px-4 text-lg -z-20 transition-all duration-[600ms] ease-in-out ${isOpen ? 'translate-x-0 z-20' : 'translate-x-96'}`}><span className={`opacity-0 transition-all ease-in-out ${isOpen ? 'opacity-100 delay-[50ms] duration-[150ms]' : 'text-red-[#EEEAE4] duration-[600ms]'}`}><Link href="about">About</Link></span></li>
+        <li className={`px-4 text-lg -z-20 transition-all duration-[600ms] ease-in-out ${isOpen ? 'translate-x-0 z-20' : 'translate-x-96'}`}><span className={`opacity-0 transition-all ease-in-out ${isOpen ? 'opacity-100 delay-[125ms] duration-[300ms]' : 'text-red-[#EEEAE4] duration-[450ms]'}`}><Link href="projects">Projects</Link></span></li>
+        <li className={`px-4 text-lg -z-20 transition-all duration-[600ms] ease-in-out ${isOpen ? 'translate-x-0 z-20' : 'translate-x-96'}`}><span className={`opacity-0 transition-all ease-in-out ${isOpen ? 'opacity-100 delay-[200ms] duration-[450ms]' : 'text-red-[#EEEAE4] duration-[300ms]'}`}><Link href="contact">Contact</Link></span></li>
+        <li className={`px-4 text-lg -z-20 transition-all duration-[600ms] ease-in-out ${isOpen ? 'translate-x-0 z-20' : 'translate-x-96'}`}><span className={`opacity-0 transition-all ease-in-out ${isOpen ? 'opacity-100 delay-[275ms] duration-[600ms]' : 'text-red-[#EEEAE4] duration-[150ms]'}`}><Link href="search">Search</Link></span></li>
       </ul>
       <div className="flex flex-col justify-around w-10 h-8 ml-10 z-40 relative" onClick={toggleMenu}>
         <div className={`flex w-full h-[3px] rounded-sm transition-all duration-[600ms] ease-in-out ${isOpen ? 'bg-borderColor -translate-y-1' : 'bg-gray-800'}`}></div>

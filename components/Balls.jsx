@@ -61,7 +61,7 @@ export default function Balls() {
                         y: ballY,
                         zIndex: -100,
                         opacity: ball.opacity,
-                        scale: 1.2,
+                        scale: 1,
                         rotate: 0,
                         filter: 'drop-shadow(0 0 10px rgba(100, 50, 0, 0.25))',
                     }}

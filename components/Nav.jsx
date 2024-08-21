@@ -19,7 +19,7 @@ export default function Nav() {
     }, 1000);
 
     return () => clearTimeout(timer);
-  }, []);
+  });
 
   return (
     <nav className="flex w-full h-20 border-borderColor border-b-4 rounded-md flex-row items-center justify-between z-10 px-10">

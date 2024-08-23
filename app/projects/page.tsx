@@ -19,7 +19,6 @@ export default function Home() {
                     throw new Error("Failed to fetch data");
                 }
                 const data = await res.json();
-                console.log(data);
                 setProjects(data);
                 setLoading(false);
             } catch (error) {

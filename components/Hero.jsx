@@ -13,7 +13,7 @@ export default function Nav() {
     </div>
     <div className="flex w-full pt-8 gap-x-8">
         <button className="bg-gray-800 text-[#efefef] px-4 py-2 rounded-md text-lg"><Link href="contact">Contact Me</Link></button>
-        <button className="border-gray-800 border-2 px-4 py-2 rounded-md text-lg">My Projects</button>
+        <button className="border-gray-800 border-2 px-4 py-2 rounded-md text-lg"><Link href="projects">My Projects</Link></button>
     </div>
   </main>
   );

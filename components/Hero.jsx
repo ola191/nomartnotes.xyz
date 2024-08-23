@@ -12,8 +12,8 @@ export default function Nav() {
         <h3 className="font-semibold text-2xl py-1 text-gray-800">websites, <span className="opacity-[90%]">dsc bots,</span> <span className="opacity-[85%]">scripts,</span> <span className="opacity-[80%]">apps, </span> <span className="opacity-[75%]">programms </span><span className="opacity-60">and more</span></h3>  
     </div>
     <div className="flex w-full pt-8 gap-x-8">
-        <button className="bg-gray-800 text-[#efefef] px-4 py-2 rounded-md text-lg"><Link href="contact">Contact Me</Link></button>
-        <button className="border-gray-800 border-2 px-4 py-2 rounded-md text-lg"><Link href="projects">My Projects</Link></button>
+        <Link href="contact"><button className="bg-gray-800 text-[#efefef] px-4 py-2 rounded-md text-lg">Contact Me</button></Link>
+        <Link href="projects"><button className="border-gray-800 border-2 px-4 py-2 rounded-md text-lg">My Projects</button></Link>
     </div>
   </main>
   );

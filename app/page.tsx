@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import Categories from "@/components/Categories";
 import Offer from "@/components/Offer";
 import Footer from "@/components/Footer";
+import PageTransition from "@/components/PageTransition";
 
 export default function Home() {
     return (
@@ -17,6 +18,8 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+            <PageTransition>
+
             <div className="flex w-4/5 mx-auto h-auto relative flex-col">
                 <Balls /> {}
                 <Nav />
@@ -25,6 +28,7 @@ export default function Home() {
                 <Offer />
                 <Footer />
             </div>
+            </PageTransition>
             </>
     );
 }

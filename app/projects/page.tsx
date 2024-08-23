@@ -5,6 +5,7 @@ import FilterPanel from "@/components/FilterPanel";
 import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
 import { useEffect, useState } from "react";
+import PageTransition from "@/components/PageTransition";
 
 export default function Home() {
 
@@ -38,6 +39,7 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+        <PageTransition>
             <div className="flex w-4/5 mx-auto h-auto relative flex-col">
                 <Nav />
                 <FilterPanel />
@@ -47,6 +49,8 @@ export default function Home() {
                 )}
                 <Footer />
             </div>
+            </PageTransition>
+
             </>
     );
 }

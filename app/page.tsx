@@ -15,8 +15,8 @@ export default function Home() {
             <Head>
                 <meta property="og:title" content="Portfolio | Ola" />
                 <meta property="og:description" content="Hi, I&apos;m Ola, a software developer. I create websites, dsc bots, mobile apps, windows apps, custom scripts, browser extensions and more, explore my work to see how I can help bring your ideas to life." />
-                <meta property="og:image" content="http://www.nomartnotes.xyz/api/logo" />
-                <meta property="og:image:secure" content="https://www.nomartnotes.xyz/api/logo" />
+                <meta property="og:image" content="https://www.nomartnotes.xyz/api/logo?v=2" />
+                <meta property="og:image:secure" content="https://www.nomartnotes.xyz/api/logo?v=2" />
                 <meta property="og:image:type" content="image/jpeg" />
                 <title>Portfolio | Ola</title>
                 <meta name="description" content="Hi, I&apos;m Ola, a software developer. I create websites, dsc bots, mobile apps, windows apps, custom scripts, browser extensions and more, explore my work to see how I can help bring your ideas to life." />

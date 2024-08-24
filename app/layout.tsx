@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "https://www.nomartnotes.xyz/api/logo",
+        url: "https://www.nomartnotes.xyz/api/logo?v=2",
       },
     ],
   },

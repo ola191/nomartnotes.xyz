@@ -9,7 +9,14 @@ import Offer from "@/components/Offer";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 
-export default function Home() {
+type Props = {}
+
+export const metadata = {
+    title: "Portfolio | Ola",
+    description: "Hi, I’m Ola, a software developer. I create websites, dsc bots, mobile apps, windows apps, custom scripts, browser extensions and more, explore my work to see how I can help bring your ideas to life. Let’s connect",
+  }
+
+export default function Home({} : Props) {
     return (
         <>
             <Head>

@@ -5,21 +5,22 @@ import Link from "next/link";
 export default function Nav() {
 
   const [isOpen, setIsOpen] = useState(false);
-  let changed = false;
+  const [changed, setChanged] = useState(false);
+
   const toggleMenu = () => {
-    changed = true;
-    setIsOpen(!isOpen)
+    setChanged(true);
+    setIsOpen(!isOpen);
   }
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (changed == false) {
+      if (!changed) {
         setIsOpen(true);
       }
     }, 0);
 
     return () => clearTimeout(timer);
-  });
+  }, [changed]);
 
   return (
     <nav className="flex w-full h-20 border-borderColor border-b-4 rounded-md flex-row items-center justify-between z-10 px-10">

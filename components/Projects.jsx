@@ -40,7 +40,7 @@ export default function Projects({ projects }) {
 
     const projectCards = projects.map((project, index) => {
         const description = project.description || "";
-        const [metadata, ...descriptionParts] = description.split(" - ");
+        const [metadata, ...descriptionParts] = description.split("-");
         const mainDescription = descriptionParts.join(" - ");
         let sidebarColor = "#ffffff";
         if (metadata.includes("🟩")) {
@@ -56,26 +56,29 @@ export default function Projects({ projects }) {
         } 
 
         return (
-            <div key={`project-${index}`} className="paper w-[350px] h-[450px] bg-borderColor rounded-md flex flex-col p-4">
+            <div key={`project-${index}`} className="paper w-[350px] h-[450px] bg-borderColor rounded-md flex flex-col px-4 py-2 justify-evenly">
                 <div style={{ backgroundColor: sidebarColor }} className="absolute top-0 left-0 w-1 h-full"></div>
 
-                <p className="font-semibold text-lg text-gray-800 p-2">{project.name}</p>
-                <p className="text-gray-600 p-2 -translate-x-2">{metadata || "No metadata"}</p>
-                <p className="text-gray-600 p-2">{mainDescription || "No description"}</p>
-                <p className="text-gray-600 p-2">Created: {formatDate(project.created_at)}</p>
-                <p className="text-gray-600 p-2">Updated: {formatDate(project.updated_at)}</p>
-                <p className="text-gray-600 p-2">{project.language}</p>
-                <p className="text-gray-600 p-2">
+                <div className="font-semibold text-lg text-gray-800">{project.name}</div>
+                <div className="text-gray-600 font-semibold">{metadata || "No metadata"}</div>
+                <div className="text-gray-600 relative px-4">{mainDescription || "No description"}
+                <div style={{ backgroundColor: sidebarColor }} className="absolute top-0 left-0 w-1 h-full opacity-35"></div>
+
+                </div>
+                <div className="text-gray-600"><b>Created: </b>{formatDate(project.created_at)}</div>
+                <div className="text-gray-600"><b>Updated: </b> {formatDate(project.updated_at)}</div>
+                <div className="bg-borderColorDarker text-[#efefef] px-2 py-1 rounded-md text-md inline w-fit">{project.language}</div>
+                <div className="text-gray-600">
                     {project.topics && project.topics.length > 0 ? (
                         project.topics.map((topic, topicIndex) => (
-                            <span key={topicIndex} className="text-gray-600 p-2">
+                            <div key={topicIndex} className="bg-borderColorDarker text-[#efefef] px-2 mr-2 py-1 rounded-md text-md inline">
                                 {topic}
-                            </span>
+                            </div>
                         ))
                     ) : (
-                        <span className="text-gray-600 p-2">No topics available</span>
+                        <span className="bg-borderColorDarker text-[#efefef] px-2 mr-2 py-1 rounded-md text-md inline">No topics available</span>
                     )}
-                </p>
+                </div>
             </div>
         );
     });

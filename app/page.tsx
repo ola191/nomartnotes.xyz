@@ -4,7 +4,7 @@ import Head from "next/head";
 import Nav from "@/components/Nav";
 import Balls from "@/components/Balls";
 import Hero from "@/components/Hero";
-import Categories from "@/components/Categories";
+import Samples from "@/components/Samples";
 import Offer from "@/components/Offer";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
@@ -24,7 +24,7 @@ export default function Home() {
                 <Balls /> {}
                 <Nav />
                 <Hero />
-                <Categories />
+                <Samples />
                 <Offer />
                 <Footer />
             </div>

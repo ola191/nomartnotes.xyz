@@ -14,12 +14,12 @@ export default function Home() {
         <>
             <Head>
                 <title>Portfolio | Ola</title>
-                <meta name="description" content="Hi, I&apos;m Ola, a software developer. I create websites, dsc bots, mobile apps, windows apps, custom scripts, browser extensions and more, explore my work to see how I can help bring your ideas to life. Let&apos;s connect" />
+                <meta name="description" content="Hi, I&apos;m Ola, a software developer. I create websites, dsc bots, mobile apps, windows apps, custom scripts, browser extensions and more, explore my work to see how I can help bring your ideas to life." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta property="og:title" content="Portfolio | Ola" />
-                <meta property="og:description" content="Hi, I&apos;m Ola, a software developer. I create websites, dsc bots, mobile apps, windows apps, custom scripts, browser extensions and more, explore my work to see how I can help bring your ideas to life. Let&apos;s connect" />  
+                <meta property="og:description" content="Hi, I&apos;m Ola, a software developer. I create websites, dsc bots, mobile apps, windows apps, custom scripts, browser extensions and more, explore my work to see how I can help bring your ideas to life." />  
+                <meta property="og:image" content="https://nomartnotes.xyz/api/logo" />
                 <link rel="icon" href="/favicon.ico" />
-                <meta property="og:image" content="http://localhost:3000/api/logo" />
             </Head>
             <PageTransition>
 

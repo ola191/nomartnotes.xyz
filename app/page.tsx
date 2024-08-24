@@ -1,3 +1,5 @@
+'use client'
+
 import Head from "next/head";
 import Nav from "@/components/Nav";
 import Balls from "@/components/Balls";
@@ -7,19 +9,12 @@ import Offer from "@/components/Offer";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 
-type Props = {}
-
-export const metadata = {
-    title: "Portfolio | Ola",
-    description: "Hi, I’m Ola, a software developer. I create websites, dsc bots, mobile apps, windows apps, custom scripts, browser extensions and more, explore my work to see how I can help bring your ideas to life. Let’s connect",
-}
-
-export default function Home({} : Props) {
+export default function Home() {
     return (
         <>
             <Head>
-                <title>Ola Krassowska</title>
-                <meta name="description" content="my portfolio." />
+                <title>Portfolio | Ola</title>
+                <meta name="description" content="Hi, I’m Ola, a software developer. I create websites, dsc bots, mobile apps, windows apps, custom scripts, browser extensions and more, explore my work to see how I can help bring your ideas to life. Let’s connect" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

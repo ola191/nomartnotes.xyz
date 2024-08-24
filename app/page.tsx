@@ -18,6 +18,9 @@ export default function Home() {
                 <meta property="og:image" content="https://www.nomartnotes.xyz/api/logo?v=3" />
                 <meta property="og:image:secure" content="https://www.nomartnotes.xyz/api/logo?v=3" />
                 <meta property="og:image:type" content="image/jpeg" />
+                <meta property="og:url" content="https://www.nomartnotes.xyz/" />
+                <meta property="og:type" content="website" />
+                <meta property="fb:app_id" content="429225466804892" />
                 <title>Portfolio | Ola</title>
                 <meta name="description" content="Hi, I&apos;m Ola, a software developer. I create websites, dsc bots, mobile apps, windows apps, custom scripts, browser extensions and more, explore my work to see how I can help bring your ideas to life." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />

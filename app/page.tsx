@@ -1,5 +1,3 @@
-'use client'
-
 import Head from "next/head";
 import Nav from "@/components/Nav";
 import Balls from "@/components/Balls";
@@ -14,7 +12,7 @@ type Props = {}
 export const metadata = {
     title: "Portfolio | Ola",
     description: "Hi, I’m Ola, a software developer. I create websites, dsc bots, mobile apps, windows apps, custom scripts, browser extensions and more, explore my work to see how I can help bring your ideas to life. Let’s connect",
-  }
+}
 
 export default function Home({} : Props) {
     return (

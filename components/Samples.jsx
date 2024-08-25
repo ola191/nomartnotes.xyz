@@ -5,11 +5,12 @@ export default function Samples() {
     return (
         <main className="flex w-full h-auto flex-col gap-y-8 pb-12">
             <div className="flex w-full">
-                <h3 className="font-semibold text-gray-600 text-xl text-center w-full py-2">SAMPLE PROJECTS</h3>
+                <h3 className="font-semibold text-gray-600 text-xl text-center w-full py-2">SAMPLES</h3>
             </div>
             <div className="flex w-full flex-row h-auto py-8 rounded-md items-center justify-between z-10 px-10 bg-gradient-to-br from-[rgba(239,239,239, 0.925)] to-[#e8e8e8] shadow-md">
 
-                <div className="paper relative w-[350px] h-[450px] bg-borderColor rounded-md flex flex-col items-center justify-center">
+            <div className="paper relative w-[600px] h-[450px] bg-borderColor rounded-md flex flex-col items-center justify-center">
+                    <VideoComponent src="video/dscbot.mp4" />
                 </div>
                 
                 <div className="paper relative w-[350px] h-[450px] bg-borderColor rounded-md flex flex-col items-center justify-center">
@@ -17,7 +18,7 @@ export default function Samples() {
                 </div>
                 
                 <div className="paper relative w-[350px] h-[450px] bg-borderColor rounded-md flex flex-col items-center justify-center">
-                    <VideoComponent />
+                    <VideoComponent src="video/listsapp.mp4" />
                 </div>
 
             </div>
@@ -25,7 +26,7 @@ export default function Samples() {
     );
 }
 
-function VideoComponent() {
+function VideoComponent({ src }) {
     const videoRef = useRef(null);
 
     useEffect(() => {
@@ -54,7 +55,7 @@ function VideoComponent() {
             <video
                 ref={videoRef}
                 className="h-[95%] object-cover bg-red-500 w-[73%] rounded-md"
-                src="video/listsapp.mp4"
+                src={src}
                 autoPlay
                 loop
                 muted

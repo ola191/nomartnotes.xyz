@@ -13,9 +13,3 @@ If you have suggestions or want to share feedback, send me message!
 ## 📫 Contact
 
 You can find me on [my website](https://nomartnotes.xyz/contact) or contact me directly via [email](mailto:ola.krassowska@hotmail.com).
-
-
-
-
-https://github.com/user-attachments/assets/ab078c4d-0ee3-4ac0-9ad9-25532d58aaa6
-
